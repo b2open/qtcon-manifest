@@ -1,0 +1,18 @@
+<manifest>
+  <default revision="dunfell" sync-j="1"/>
+
+  <remote fetch="git://git.yoctoproject.org"      name="yocto-layer"/>
+  <remote fetch="git://git.openembedded.org"      name="oe-layer"/>
+  <remote fetch="git://github.com/meta-qt5"       name="qt5-layer"/>
+  <remote fetch="git://github.com/b2open"         name="b2open-layer"/>
+
+  <project remote="yocto-layer"          revision="012ad10a89a889c21e67c27dc37d22520212548f" name="poky"                  path="layers"/>
+  <project remote="yocto-layer"          revision="93305f7c3a9c338a3d2daef61514f61b4256f979" name="meta-raspberrypi"      path="layers/meta-raspberrypi"/>
+  <project remote="oe-layer"             revision="144077083457ccb75700777d5e6b1da9aaff01aa" name="meta-openembedded"     path="layers/meta-oe"/>
+  <project remote="qt5-layer"            revision="0e7015f7a86dda995a39662edbb5c26da647c496" name="meta-qt5"              path="layers/meta-qt5"/>
+  <project remote="b2open-layer"         revision="dunfell"                                  name="meta-qtcon-brasil"     path="layers/meta-qtcon-brasil">
+    <linkfile src="scripts/setup-environment" dest="setup-environment"/>
+  </project>
+</manifest>
+
+
